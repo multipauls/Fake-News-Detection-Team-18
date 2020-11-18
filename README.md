@@ -1,6 +1,10 @@
 # Fake News Detection (Team 18)
-## To Run:
-  - 
+## To Run (training):
+  - Save the NELA-GT 2019 dataset in Google Drive
+  - Run Experiments-jupyter/Fake-News.ipynb (change paths to match)
+## To Run (testing samples):
+  - Install the requirements from streamlit/requirements.txt
+  - Run 'streamlit run visualizer.py'
 ## Best Performing Model: TF-IDF Vectors with SVM (90.6%)
 ## Original Notebook links:
   - https://colab.research.google.com/drive/1syECF2-gCI3KVg0lMnDL655iULSgyZLS?usp=sharing
