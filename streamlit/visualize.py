@@ -19,19 +19,13 @@ model = ".data/tfidf_logistic_regression_model.joblib"
 vectorizer = ".data/tf_idf_vectorizer.joblib"
 
 svm_model = load(model)
-test = load(test_data)
+df = pd.DataFrame(load(test_data))
 tf_idf = load(vectorizer)
 
 
-print(svm_model)
 
-x_test = test['data']
-
-y_test = test['labels']
-for j in y_test[:10]:
-    print(j)
-
-df = pd.DataFrame(list(zip(x_test, y_test)))
+# print("Dataframe")
+# print(df)
 
 if st.checkbox('Show dataframe'): 
      st.write(df)
